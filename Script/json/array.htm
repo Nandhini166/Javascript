@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Array in JSON is a list of items surrounded in square brackets[].</p>
+	<p>Each item in the array is separated by a comma.</p>
+	<p>The array begins with 0.</p>
+	<p>The square brackets[] are used to declare json array.</p>
+	<p>Json are ordered list of values</p>
+	<p id="demo" style="font-size: 30px;"></p>
+	 <script>
+var myObj, i, x = "";
+myObj = {
+  "name":"John",
+  "age":30,
+  "cars":[ "Ford", "BMW", "Fiat" ]
+};
+
+for (i = 0; i < myObj.cars.length; i++) {
+  x += myObj.cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = "Output is: " + "<br>" + x;
+</script>
+
+</body>
+</html>

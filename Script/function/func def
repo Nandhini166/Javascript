@@ -1,0 +1,18 @@
+WHAT IS FUNCTION ?
+     A function is block of code designed to perform a particular task.
+     A JS function is executed when something invokes it(calls it).
+WHY FUNCTIONS ?
+     You can reuse code:Define code once ,and use it many times
+     You can use same code many times with different arguments,to produce different results.
+WHAT IS FUNCTION ARGUMENTS ?
+    Arguments are passed by value.
+    The parameters in a function call,are the function arguments.
+    Js arguments are passed by value.
+    The function only gets to known the values,not the arguments locations.
+WHAT IS FUNCTION CALL() ?
+   The call() method is a predefined javascript method.
+   It can be used to invoke a method with an owner object as an argument(parameter)
+   With call(),an object can use a method belonging to another object.
+WHAT IS CLOSURE FUNCTION ?
+    A closure is the combination of a function bundled together(enclosed)with references to its surrounding state .
+    In JS,closures are the primary mechanism used to enable data privacy.

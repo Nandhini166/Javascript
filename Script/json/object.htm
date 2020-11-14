@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="01" style="font-size: 30px;"></p>
+	
+		<p>JSON objects are surrounded by curly braces {}.</p>
+
+        <p>JSON objects are written in key/value pairs.</p>
+
+        <p>Keys must be strings, and values must be a valid JSON data type (string, number, object, array, boolean or null).</p>
+
+       <p> Keys and values are separated by a colon.</p>
+       <script type="text/javascript">
+       	var mObj,i,x = "";
+       	mObj = {
+       		"name" : "Nandhu",
+       		"Hobby": "Tennis",
+       		"cars": {
+       			"car1": "Bmw",
+       			"car2": "Enfield",
+       			"car3": "adi"
+       		}
+       	}
+       	delete mObj.cars.car3;
+       	for (i in mObj.cars) {
+       		x += mObj.cars[i] + "<br>";
+       	}
+       	document.getElementById('01').innerHTML = "Output is: " + "<br>"  + x ;
+       </script>
+
+</body>
+</html>

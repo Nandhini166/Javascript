@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Local Scope</h1>
+	<p id="smile"></p>
+	<script type="text/javascript">
+		/*variables declared within a JS function,become to the function.
+		..2.They can only be accessed from within the function.
+		*/
+		function myFun() {
+			var mName = "Nandhu";
+			document.getElementById('smile').innerHTML = typeof mName +"<br>" + mName;
+		}
+		myFun();
+
+	</script>
+
+</body>
+</html>

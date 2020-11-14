@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="nan01"></p>
+	<button onclick="numPlus()">Number Plus</button><br><br>
+	<p id="nan02"></p>
+	<button onclick="numMulti()">Number Multiplication</button>
+	<script type="text/javascript">
+		function numPlus() {
+			var str = "Helloooo Nancy...!!! Googloooo";
+			var pattern = /\o+/g;
+			var res = str.match(pattern);
+			document.getElementById('nan01').innerHTML = "Number Plus is : " +  res;
+		}
+		function numMulti() {
+			var string = "NAncy ...NAncy..NAANannaanaaaa..aaa";
+			var pattern1 = /\a*/g;
+			var result = string.match(pattern1);
+			document.getElementById('nan02').innerHTML = "Number Multiply is : "  + result;
+
+		}
+	</script>
+
+</body>
+</html>

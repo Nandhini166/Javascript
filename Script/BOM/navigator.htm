@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id = "demo"></p>
+	<p id="smiley"></p>
+	<script type="text/javascript">
+		//It contains information about the visitor's browser.
+		document.getElementById('demo').innerHTML = "Navigator app name is :" + navigator.appName;//application name:returns the application name of the browser.
+		document.getElementById('smiley').innerHTML = "App Code Name is :"  + navigator.appCodeName;//application code name
+		document.write("navigator product is :"  + navigator.product + "<br><br>");//It returns the product name of the browser engine.
+		document.write("app version is:" + navigator.appVersion + "<br><br>");
+        document.write("USer Agent is : "  + navigator.userAgent  + "<br><br>");
+        document.write("Platform is :" + navigator.platform + "<br><br>");
+        document.write("Language is :" + navigator.language + "<br><br>");
+        document.write("USer online is :" + navigator.onLine + "<br><br>");
+        document.write("Java is Enabled is :" + navigator.javaEnabled() + "<br><br>");
+        document.write("Cookies Enabled is :" + navigator.cookieEnabled + "<br><br>");
+        document.write("All info is :" + window.navigator + "<br><br>");
+
+
+
+
+
+	</script>
+
+</body>
+</html>

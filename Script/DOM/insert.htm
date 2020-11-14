@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="div1">
+		<h1 id="id01">First paragraph</h1>
+		<p id="id02">Another Paragraph</p>
+    </div>
+    <script type="text/javascript">
+    	var par = document.createElement('h2');
+    	var node = document.createTextNode('This is new');
+    	par.appendChild(node);
+
+    	var ele = document.getElementById('div1');
+    	var child = document.getElementById('id02');
+    	ele.insertBefore(par,child);
+    </script>
+
+</body>
+</html>

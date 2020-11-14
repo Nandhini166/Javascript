@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Function hoisting</h1>
+	<script type="text/javascript">
+	console.clear();
+	var total = 10;
+	var sum = function(num1, num2) {
+		console.log(total);
+		total = num1 + num2;
+		var total;
+		console.log(total);
+	}
+	sum(20,90);
+</script>
+
+</body>
+</html>

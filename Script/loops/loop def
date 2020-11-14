@@ -1,0 +1,9 @@
+What is loops?
+   The repetition of code is called loop.
+   Each reptition is called iteration.
+   In another words,
+       Running same line of code for a certain number of times is called loop.
+FOR LOOP:
+   when you know,how many times your loop needs to iterate then you can use for loop.
+WHILE LOOP:
+    When you have the kind of loop where you need to sstop the loop based on certain condition ,you can use while loop.

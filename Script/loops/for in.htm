@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>For In</h1>
+	<p id="smiley"></p>
+	<script type="text/javascript">
+		//Propertied of an object
+		var smile = "";
+		var person = {
+			fname:"Nandhu",
+			lname:"smiley",
+			age:20
+		};
+		var i;
+		for(i in person) {
+			smile += person[i] + "";
+		}
+		document.getElementById('smiley').innerHTML = smile;
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Implicit coercion ->>> Console </h1>
+    <script type="text/javascript">
+    	/*Implicit: It Values can also be converted between different types and automatically and it is called implicit type coercion.
+    	..2..It usually happens when you apply operators to value of different types.
+    	..3.EXPLICIT:It is Programmatically.
+    	4..It converting value from one type to another(such as string to number,Object to boolean)
+    	*/
+    	//String
+    	var mNum = 10;
+    	console.clear();
+    	console.log(typeof(String(mNum)));
+    	console.log(typeof(String(10.16)));
+    	console.log(typeof(String(null)));
+    	console.log(typeof(String(undefined)));
+    	//Number
+    	console.log(typeof(Number('8')));
+    	console.log(Number(true),typeof(Number(true)));
+    	console.log(Number(false),typeof(Number(true)));
+    	console.log(Number('papaya'),typeof(Number('papaya')));
+    	//Boolean
+    	console.log(typeof(Boolean('8')));
+    	console.log(Boolean(1),typeof(Boolean(1)));
+    	console.log(Boolean(0),typeof(Boolean(0)));
+    	console.log(Boolean('papaya'),typeof(Boolean('papaya')));
+    	console.log(Boolean(null), typeof(Boolean(null)));
+    	console.log(Boolean(undefined), typeof(Boolean(undefined)));
+    	console.log(Boolean(''),typeof(Boolean('')));
+
+    </script>
+</body>
+</html>

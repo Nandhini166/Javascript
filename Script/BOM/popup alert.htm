@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button onclick="aLert()">Alert</button><br><br>
+	<button onclick="conFirm()">confirm</button>
+	<p id="nth"></p>
+	<button onclick="promPt()">Prompt</button>
+	<p id="nan"></p>
+     <script type="text/javascript">
+     	function aLert() {
+     		alert("smiley");
+     	}
+     	function conFirm() {
+     		var smil;
+     		if (confirm("press a button")) {
+     			smil = "you Pressed OKay ";
+     		} else {
+     			smil = "you Pressed Cancel";
+     		}
+     	document.getElementById('nth').innerHTML = smil;
+     }
+     function promPt() {
+     	var x;
+     	var person = prompt("Please Enter Your Name");
+     	if (person == null || person == "") {
+     		x = "User Cancelled the prompt";
+     	} else {
+     		x = " Hello "  + person  +  "  !!How R u";
+     	}
+     	document.getElementById("nan").innerHTML = x;
+
+     }
+
+     </script>
+</body>
+</html>

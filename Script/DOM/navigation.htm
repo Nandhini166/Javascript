@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="smiley">smiley 1st child</h1> 
+	<h2 id="2nd">2nd head</h2>
+	<p id="3rd">mfm</p>
+	<p id="Nth">2nd child</p>
+
+	<script type="text/javascript">
+		document.getElementById('smiley').innerHTML = document.getElementById('Nth').firstChild.nodeValue;
+		document.getElementById('2nd').innerHTML = document.getElementById('3rd').childNodes[0].nodeValue;
+	</script>
+
+</body>
+</html>

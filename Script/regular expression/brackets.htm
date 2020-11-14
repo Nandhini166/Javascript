@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="nan01"></p>
+	<p id="nan02"></p>
+	<script type="text/javascript">
+		var str = "Smiley ForEver";
+		var pattern = /[e]/g;
+		var result = str.match(pattern);
+		document.getElementById('nan01').innerHTML = "[A-z] pattern is :"  +  result;
+		var string = "908077733;"
+		var patt1 = /[0-8]/g;
+		var res = string.match(patt1);
+		document.getElementById('nan02').innerHTML =  "[0-9] Number pattern is : " +  res;
+	</script>
+
+</body>
+</html>

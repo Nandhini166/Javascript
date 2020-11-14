@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Classes Definition</h1>
+	<p>We can define the  class just like function declarations and function expression. </p><br>
+	<p>2.Use the keyword <b> Class</b> to create a class, and alwways add the <b> Constructor()</b> method</p>
+    <p id="demo"></p>
+	<script type="text/javascript">
+		class person {
+			constructor(name) {
+				this.pname = name ;
+			}
+		}
+		myperson  = new person("nandhu");
+		document.getElementById('demo').innerHTML = "Classes name is : "  +  myperson.pname;
+	</script>
+
+</body>
+</html>

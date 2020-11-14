@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Function Call()</h1>
+	<p id="Smiley"></p>
+	<script type="text/javascript">
+		var person = {
+			fullName: function() {
+				return this.firstName + "" + this.lastName;
+			}
+		}
+		var person1 = {
+			firstName:"Nandhu",
+			lastName:"smiley"
+		}
+		var person2 = {
+			firstName:"Ezhil",
+			lastName:"Raj"
+		}
+		var x = person.fullName.call(person1);
+		document.getElementById('Smiley').innerHTML = x;
+	</script>
+
+</body>
+</html>

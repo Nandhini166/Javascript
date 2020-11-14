@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="myMes()">
+	<h1>Events</h1>
+	<!--OnClick-->
+
+	<h2 onclick="this.innerHTML = 'Smiley :)'">Forever</h2>
+	<p id="demo"></p>
+	<button onclick="displayDate()">Click Event</button>
+	<script type="text/javascript">
+		function displayDate() {
+			document.getElementById('demo').innerHTML = Date();
+		}
+	</script>
+	<h2>Onchange</h2>
+	<script type="text/javascript">
+		function myFun() {
+			var nan = document.getElementById('fname');
+			nan.value = nan.value.toUpperCase();
+		}
+	</script>
+	Enter Your Name :<input type="text" id="fname" onchange="myFun()"><br><br><br>
+	<div onmouseover="mOver(this)" onmouseout="mOut(this)"
+	style="background-color: black; width: 100px; height: 10px; padding: 40px; color: white;">Smiley :)</div><br><br>
+	<script type="text/javascript">
+		function mOver(object) {
+			object.innerHTML = "Nandhu";
+		}
+		function mOut(object) {
+			object.innerHTML = "Smiley :)";
+		}
+	</script>
+	<h2>Onload:message was triggered from onload event</h2>
+	<script type="text/javascript">
+		function myMes() {
+			alert("This message was triggered from the onload event");
+		}
+	</script>
+
+
+</body>
+</html>

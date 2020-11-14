@@ -1,0 +1,3 @@
+WHAT IS HOISTING ?
+      In Js, variable can be declared after it has been used.
+      Variable can be used before it has been declared.

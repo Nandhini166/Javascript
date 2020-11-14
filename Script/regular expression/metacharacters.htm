@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="nan01"></p>
+	<button onclick="uniCode()">Unicode</button>
+	<p id="nan02"></p>
+	<button onclick="whiteSpace()">whiteSpace</button>
+	<script type="text/javascript">
+		function uniCode() {
+			var str = "Smiley World :) !! World Hapie";
+			var pattern = /\u0057/g;
+			var res = str.match(pattern);
+			document.getElementById('nan01').innerHTML = "Unicode is :"  +  res;
+		}
+		function whiteSpace() {
+			var string = "Whatever happens juz smile and move on";
+			var patt1 = /\s/g;
+			var result = string.match(patt1);
+			document.getElementById('nan02').innerHTML = "Space is :"  +  result;
+		}
+	</script>
+
+</body>
+</html>

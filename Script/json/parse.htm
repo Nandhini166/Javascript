@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>parse()method parses a json string,constructing the js value or object described by the string.</p>
+	<p>A optional reviver function can be provided to perform a transformation on the resulting object before it is returned.</p>
+	<p id="dem"></p>
+	<script type="text/javascript">
+		var xml = new xmlHttpRequest();
+		xml.onreadyStatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				var mObj = JSON.parse(this.responseText);
+			}
+		};
+		xml.open('GET' , 'json.txt', true);
+		xml.send();
+	</script>
+	<p>Click this<a href="json.txt" target="_blank">Click</a></p>
+
+</body>
+</html>

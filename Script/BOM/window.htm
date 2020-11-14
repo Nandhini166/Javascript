@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		/* Bom provides you with a window objects ..
+		Example: To show the width and height of the window.
+		*/
+		/*console box:
+		   1.window.innerheight.
+		   2..window.innerwidht;
+		   3.window.open();
+		   4..window.close();
+		   */
+		var w = window.innerWidth
+		    || document.documentElement.ClientWidth
+		    || document.body.ClientWidth;
+		var h = window.innerHeight
+		    ||document.documentElement.ClientHeight
+		    ||document.body.ClientHeight;
+		var x = document.getElementById('demo');
+		x.innerHTML = "Browser inner window width is: " + w +  "<br>" + "Height is :" + h + ".";
+
+	</script>
+
+</body>
+</html>

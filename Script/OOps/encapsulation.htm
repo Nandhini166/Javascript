@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Encapsulation</h1>
+	<p>It is process of binding the data with the function acting on that data.</p>
+	<p>It control the data and validate it</p>
+	<script type="text/javascript">
+		class student {
+			constructor() {
+				var name;
+				var std;
+			}
+			getName() {
+				return this.name;
+			}
+			setName(name) {
+				this.name = name;
+			}
+			getStd() {
+				return this.std;
+			}
+			setStd(std) {
+				this.std = std;
+			}
+		}
+		var stu = new student();
+		stu.setName("Nandhu");
+		stu.setStd(12);
+		document.write("Output is : "+ stu.getName() + " " + stu.getStd());
+	</script>
+
+</body>
+</html>

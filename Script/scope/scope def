@@ -1,0 +1,7 @@
+WHAT IS FUNCTION SCOPE IN JS ?
+   In Js there are two types of scope:
+      1..Local Scope
+      2..Global Scope
+    Each Function creates a new scope.
+    Scope determines the accessilbility(visibility) of these variables.
+    variables defined inside a function are not accessible(visible) from outside the function.

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Object</h1>
+	<script type="text/javascript">
+		var mAgera = {
+			name: "smiley",
+			manufacturer: {
+				name:"forever",
+				location:"Agra",
+			},
+			speed: 400,
+			color: "black",
+			applyBrakers:function(){
+				setTimeout(function(){
+					console.log('Stopped');
+				},4000)
+			}
+		}
+		console.log(mAgera);
+		console.log(mAgera.name);
+		console.log(mAgera.speed);
+		console.log(mAgera.applyBrakers());
+	</script>
+
+</body>
+</html>

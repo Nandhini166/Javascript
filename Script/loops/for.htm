@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>For Loop</h1>
+	<p id="smile"></p>
+	<script type="text/javascript">
+		//For:block of code a number of times
+		var food = ["Biryani","Fried Rice","Pani Puri","RasaGulla"];
+		var smiley = "";
+		var n;
+		for (var i = 0; i < food.length; i++) {
+			smiley += food[i] + "<br>";
+		}
+		document.getElementById('smile').innerHTML = smiley;
+	</script>
+
+</body>
+</html>

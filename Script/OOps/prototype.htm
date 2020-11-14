@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Prototype Definition</h1>
+	<p>It is prototype-based language that facilitates the objects to acquire properties and features from one another</p>
+	<p>Here,Each object contains a prototype object.</p>
+	<p>A function is created the prototype property is added to that function automatically.</p>
+	<h2>Sytax</h2>
+	<h3>className:prototype:methodName</h3>
+	<script type="text/javascript">
+		function emp(fName,lName) {
+            this.fName = fName;
+            this.lName = lName;
+		}
+		emp.prototype.fullName = function() {
+			return this.fName + "" + this.lName;
+		}
+		var emp1 = new emp("nandhu" ,"smiley");
+		var emp2 = new emp("smiley","forever");
+		document.write(emp1.fullName() + "<br>");
+		document.write(emp2.fullName() + "<br>");
+	</script>
+
+</body>
+</html>

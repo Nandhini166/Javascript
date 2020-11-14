@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Stringify</h1>
+	<p>It converts a js object or value to a JSON string.</p>
+	<p>Optionally replacing values if a replacer function is specified or optionally including only the specified properties if a replacer array is specified</p>
+	<p>Convert a JS object into a string with JSON.stringify().</p>
+	<p id="dem"></p>
+	<script type="text/javascript">
+		var obj = { 
+		           name:"Nandhu",
+		           today: new Date() , city: "India" };
+		var mJSON = JSON.stringify(obj);
+		document.getElementById('dem').innerHTML = mJSON; 
+	</script>
+
+</body>
+</html>

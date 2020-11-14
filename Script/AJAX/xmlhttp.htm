@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Xmlrequest</h1>
+	<div id="demo">
+	<p>It is built-in browser object that allows to make http requests in JS.	</p>
+	<p>Xml is it name,It can operate on any data , not only in xml format.</p>
+     </div>
+	
+	<button type="button" onclick="loadDoc()">Change</button>
+	<script type="text/javascript">
+		function loadDoc() {
+			var xhttp = new xmlHttpRequest();
+			xhttp.onreadyStatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById('demo').innerHTML = this.responseText;
+					//document.write(this.responseText);
+				}
+			};
+			xhttp.open("GET" , "ajax.txt" , "true");
+			xhttp.send();
+		}
+	</script>
+
+</body>
+</html>

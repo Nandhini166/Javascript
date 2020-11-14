@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Data Abstraction</h1>
+	<p>It is way of hiding the implemention details and showing only the functionality to the users.</p>
+	<p>It ignores the irrelevant details and shows only required one.</p>
+	<script type="text/javascript">
+		//creating a constructor fun
+		function vechicle() {
+			this.vechicleName = vechicleName;
+			throw new Error("you cannot create an instance of abstract class");
+		}
+		function Bike(vechicleName) {
+			this.vechicleName = vechicleName;
+		}
+		Bike.prototype = Object.create(vechicle.prototype);
+		var bike = new Bike("Royal Enfield");
+		document.write(bike instanceof vechicle);
+		document.write(bike instanceof bike);
+	</script>
+
+</body>
+</html>

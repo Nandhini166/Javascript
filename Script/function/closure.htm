@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Counting a Local variables</h1>
+	<button type="button" onclick="myFun()">Count :)</button>
+	<p id="Smiley">0</p>
+	<script type="text/javascript">
+		var add = (function() {
+			var counter = 1;
+			return function() {
+				counter += 1;
+				return counter;
+			}
+		})();
+		function myFun() {
+			document.getElementById('Smiley').innerHTML = add();
+		}
+	</script>
+
+</body>
+</html>

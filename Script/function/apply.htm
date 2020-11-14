@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1>Function apply()</h1>
+	<p id="Smiley"></p>
+	<script type="text/javascript">
+		/*same as call() function */
+		var person = {
+			fullName: function() {
+				return this.firstName + "" + this.lastName;
+			}
+		}
+		var person1 = {
+			firstName:"Nandhu",
+			lastName:"Smiley"
+		}
+		var person2 = {
+			firstName:"Ezhil",
+			lastName :"Raj"
+		}
+		/* apply() methods takes arguments as an array */
+		var x = person.fullName.apply(person1);
+		document.getElementById('Smiley').innerHTML = x;
+	</script>
+
+
+</body>
+</html>

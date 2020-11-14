@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Polymorphism</h1>
+	<p>It is core concept of an object-oriented paradigm that provides a single action in different forms.</p>
+	<p>It provides an ability to call the same method on different JS objects.</p>
+	<script type="text/javascript">
+		class A {
+			display() {
+				document.write("A is invoked");
+			}
+		}
+		class B extends A {
+
+		}
+		var b = new B();
+		b.display();
+	</script>
+
+
+</body>
+</html>

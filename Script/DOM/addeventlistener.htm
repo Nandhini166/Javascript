@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	#myDiv {
+		background-color: black;
+		color: white;
+		padding: 50px;
+		width: 50%;
+		height: 50%;
+	}
+</style>
+<body>
+     <h1>Click me</h1>
+	<button id="myBtn">Try</button>
+	<script type="text/javascript">
+		var x = document.getElementById('myBtn');
+		x.addEventListener("mouseover",mOver);
+		x.addEventListener("click",mClic);
+		x.addEventListener("mouseout",mOut);
+
+		function mOver() {
+			document.getElementById("myBtn").innerHTML += "Mouse over <br>";
+		}
+
+		function mClic() {
+			document.getElementById('myBtn').innerHTML += "clicked<br>";
+		}
+		
+		function mOut() {
+			document.getElementById("myBtn").innerHTML += 
+			"mouse Out<br>";
+		}
+
+	</script>
+	<h1 id="demo"></h1>
+	<div id="myDiv">
+    <p>This div element has an onmousemove event handler that displays a random number every time you move your mouse inside this orange field.</p>
+    <p>Click the button to remove the div's event handler.</p>
+    <button onclick="removeHandler()" id="myBtn">Remove</button>
+    </div>
+	<script>
+		document.addEventListener('click', function(){
+			alert("Timing Stopped");
+		});
+
+		document.getElementById('myDiv').addEventListener("mousemove",mSm);
+
+		function mSm() {
+			document.getElementById('demo').innerHTML = Math.random();
+		}
+		function removeHandler() {
+			document.getElementById('myDiv').removeEventListener('mousemove',mSm);
+		}
+	</script>
+</body>
+</html>

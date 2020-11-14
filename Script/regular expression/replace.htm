@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button onclick="myFun()">Try</button>
+	<p id="demo">call me nandhu</p>
+	<script type="text/javascript">
+		function myFun() {
+			var str = document.getElementById('demo').innerHTML;
+			var text = str.replace("nandhu" , "nathifa");
+			document.getElementById('demo').innerHTML = text;
+		}
+	</script>
+
+</body>
+</html>
